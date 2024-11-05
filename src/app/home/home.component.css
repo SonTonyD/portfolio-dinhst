@@ -1,0 +1,89 @@
+main {
+  min-height: 100vh;
+  background-color: #000;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 10%;
+  height: 40rem; /* Hauteur fixe */
+  width: 80rem; /* Largeur fixe */
+  margin: 0 auto;
+}
+
+article {
+  flex: 1;
+  padding-right: 4rem;
+  width: 40rem; /* Largeur fixe pour l'article */
+}
+
+h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+p {
+  color: #a0a0a0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  width: 35rem; /* Largeur fixe pour le paragraphe */
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+img {
+  width: 25rem; /* Largeur fixe */
+  height: 25rem; /* Hauteur fixe */
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: #4a5d5e;
+}
+
+/* Responsive design */
+@media (max-width: 80rem) {
+  /* Correspond à la largeur de la section */
+  section {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    width: 100%;
+    padding: 2rem 5%;
+  }
+
+  article {
+    padding-right: 0;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+
+  p {
+    width: 100%;
+    max-width: 35rem;
+    margin: 0 auto 2rem auto;
+  }
+
+  img {
+    width: 20rem;
+    height: 20rem;
+  }
+}

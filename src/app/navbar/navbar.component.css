@@ -1,0 +1,40 @@
+nav {
+  background-color: #333;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%); /* Centre la navbar horizontalement */
+  width: 90%; /* Réduit la largeur pour avoir des marges sur les côtés */
+  max-width: 1200px; /* Limite la largeur maximale */
+  z-index: 1000;
+  border-radius: 0 0 15px 15px; /* Arrondis uniquement en bas */
+  margin: 0 20px; /* Marges sur les côtés */
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+li {
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+li:hover {
+  color: #ffd700;
+  transform: translateY(-2px);
+}
+
+body {
+  padding-top: 70px;
+}
