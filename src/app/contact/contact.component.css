@@ -1,0 +1,51 @@
+/* Contact */
+.contact-wrapper {
+  background-color: #ffffff;
+  color: #9c9c9c;
+
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  margin: auto;
+
+  padding-block: 5rem;
+}
+
+.contact-wrapper h2 {
+  color: #000000;
+}
+
+.contact-wrapper h3 {
+  color: #000000;
+}
+
+.intro-contact {
+  text-align: center;
+  padding: 1rem;
+}
+
+.contact-method-list {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-block: 2rem;
+}
+
+.img-contact-method {
+  width: 220px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 5%;
+}
+
+.contact-method h3 {
+  text-align: center;
+}
+
+.contact-method p {
+  text-align: center;
+}
+
+.contact-method a {
+  text-align: center;
+}

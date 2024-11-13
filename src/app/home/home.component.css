@@ -1,0 +1,87 @@
+/* Home */
+.home-wrapper {
+  background-color: #080808;
+  color: #9c9c9c;
+}
+
+.home-wrapper h1 {
+  color: white;
+}
+
+.home-wrapper button {
+  background-color: #4caf50;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.3);
+  width: 300px;
+}
+
+.primary-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75px;
+  background-color: #1b1b1b;
+}
+
+.nav-list {
+  display: flex;
+  gap: 5rem;
+}
+
+.nav-elem {
+  color: #9c9c9c;
+}
+
+.contact-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  min-height: 450px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: auto 0;
+  gap: 1.5rem;
+}
+
+.profile-picture {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.worked-with {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: center;
+  min-height: 100px;
+}
+
+.logo-list {
+  display: flex;
+  gap: 1rem;
+}
+
+.logo {
+  width: 160px;
+  height: 60px;
+  object-fit: cover;
+}

@@ -1,0 +1,22 @@
+/* footer */
+.footer {
+  background-color: #1b1b1b;
+  height: 70px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  display: inline-flex;
+  align-items: center;
+  color: #9c9c9c;
+}
+
+.footer img {
+  height: 1em;
+  width: auto;
+  vertical-align: middle;
+}
