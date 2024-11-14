@@ -21,6 +21,13 @@
   width: 300px;
 }
 
+.home-wrapper button:hover {
+  background-color: #45a049; /* Changer la couleur de fond au survol */
+  color: #fff; /* Couleur du texte reste blanc */
+  transform: scale(1.05); /* Agrandir légèrement le bouton */
+  box-shadow: 0 0 30px rgba(76, 175, 80, 0.5); /* Ombre plus marquée pour un effet de profondeur */
+}
+
 .primary-navigation {
   display: flex;
   justify-content: center;
@@ -36,6 +43,12 @@
 
 .nav-elem {
   color: #9c9c9c;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-elem:hover {
+  color: #ff6f61; /* Couleur de survol, ici un rouge corail */
+  transform: scale(1.1); /* Agrandissement léger lors du survol */
 }
 
 .contact-list {
@@ -181,8 +194,8 @@
   flex-direction: column;
   max-width: 900px;
   margin: auto;
-
   padding-block: 5rem;
+  gap: 2rem;
 }
 
 .recent-work-wrapper h1 {
@@ -205,21 +218,33 @@
 .img-recent-work {
   width: 445px;
   height: 300px;
-  object-fit: cover;
+  object-fit: contain;
   border: 2px solid black;
   border-radius: 5%;
+  background-color: #ffffff;
 }
 
 .recent-work-content {
-  display: flex;
-  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 .recent-work-wrapper article {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-block: 3rem;
+  padding: 2rem;
+  background-color: #1b1b1b;
+  border-radius: 2rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.recent-work-wrapper article:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  background-color: #222; /* Une légère variation de couleur */
 }
 
 .recent-work-wrapper button {
@@ -284,8 +309,26 @@
   font-weight: 900;
 }
 
+.contact-method {
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-method:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
 .contact-method a {
+  display: inline-block;
   text-align: center;
+}
+
+.copied-message {
+  text-align: center;
+  height: 1rem;
+  color: #000000;
 }
 
 /* footer */

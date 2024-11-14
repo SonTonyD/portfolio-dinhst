@@ -1,0 +1,61 @@
+.wrapper {
+  width: 100%;
+  background-color: #080808;
+  color: #9c9c9c;
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.flex-group {
+  display: grid;
+  gap: 2rem;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+}
+
+/* En-tête */
+.header {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Section d'information */
+.section {
+  margin-bottom: 30px;
+  padding: 15px;
+  border: 1px solid #444;
+  border-radius: 8px;
+  background-color: #1a1a1a;
+}
+
+/* Icônes */
+.icon {
+  font-size: 1.5em;
+  vertical-align: middle;
+  margin-right: 10px;
+  color: #9c9c9c;
+}
+
+/* Bouton retour */
+.back-button {
+  display: inline-block;
+  color: #9c9c9c;
+  text-decoration: none;
+  border: 1px solid #9c9c9c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.back-button:hover {
+  background-color: #444;
+}

@@ -34,7 +34,9 @@
         Angular et Java Spring, je conçois des applications web robustes et
         innovantes.
       </p>
-      <button>Let's get started ></button>
+      <a href="#case-studies">
+        <button>Let's get started ></button>
+      </a>
     </div>
     <img
       class="profile-picture"
@@ -121,29 +123,28 @@
     <div class="intro-recent-work">
       <h2>Mes expériences</h2>
       <p>
-        Solving user & business problems since last 15+ years.Lorem ipsum dolor
-        sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua.
+        Explorez mes expériences et projets en entreprise, où j'ai pu développer
+        des solutions techniques et collaborer avec des équipes engagées. Chaque
+        mission témoigne de mon expertise en développement full stack avec
+        Angular et Java Spring.
       </p>
     </div>
     <section class="recent-work-content">
-      <article>
-        <img class="img-recent-work" src="recent-work-01.jpg" alt="" />
-        <h3>Développeur Full Stack Angular / Java Spring (6 mois)</h3>
+      <article (click)="navigateToRoute('/smile')">
+        <img class="img-recent-work" src="logo_smile.png" alt="" />
+        <h3>Stage Développeur Full Stack Angular et Java Spring</h3>
         <p>
-          Labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut
-          labore et dolore magna.
+          Stage de 6 mois chez SMILE dans la refonte d'une application destinée
+          au recrutement au sein de l'entreprise.
         </p>
-        <button (click)="navigateToRoute('/viveris')">En savoir plus ></button>
       </article>
-      <article>
-        <img class="img-recent-work" src="recent-work-02.jpg" alt="" />
-        <h3>Développeur Full Stack Angular / Java Spring (6 mois)</h3>
+      <article (click)="navigateToRoute('/viveris')">
+        <img class="img-recent-work" src="logo_viveris.png" alt="" />
+        <h3>Stage Développeur Full Stack Angular et Java Spring</h3>
         <p>
-          Labore et dolore magna aliqua. sed do eiusmod tempor incididunt ut
-          labore et dolore magna.
+          Stage de 6 mois chez Viveris Systèmes dans le développement d'une
+          application de logistique pour le CNRS de Grenoble.
         </p>
-        <button>En savoir plus ></button>
       </article>
     </section>
   </div>
@@ -169,7 +170,7 @@
         <p>Télécharger</p>
       </a>
     </div>
-    <div class="contact-method">
+    <div (click)="copyEmail()" class="contact-method">
       <img
         class="img-contact-method"
         src="contact-method-02.png"
@@ -190,6 +191,7 @@
       </a>
     </div>
   </div>
+  <div class="copied-message">@if(emailCopied) { Email copié ! }</div>
 </div>
 
 <div class="footer">
