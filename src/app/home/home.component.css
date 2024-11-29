@@ -128,7 +128,7 @@
 .img-right {
   width: 445px;
   height: 300px;
-  object-fit: cover;
+  object-fit: fill;
   border: 2px solid black;
   border-radius: 5%;
 }
@@ -153,8 +153,13 @@
   gap: 1.5rem;
 }
 
+.align-center {
+  display: flex;
+  align-items: center;
+}
+
 .case-study-content {
-  max-width: 60%;
+  max-width: 50%;
   margin: auto;
 
   display: flex;
@@ -175,12 +180,18 @@
   box-shadow: 0 0 20px;
 }
 
+.tag-list {
+  display: flex;
+  gap: 1rem;
+}
+
 .case-study-tag {
   background-color: #e0fff8;
   color: #2ab090;
   padding: 0.5rem 1rem;
   border-radius: 15%;
-  max-width: 100px;
+  max-width: 120px;
+  font-size: 10px;
 }
 
 /* Recent Work */
